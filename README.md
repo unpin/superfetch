@@ -75,7 +75,7 @@ Sends request with body and returns FetchResponse object.
 Send request and returns FetchResponse object.
 
 ```ts
-import Fetch from "./deps.ts";
+import { Fetch } from "./deps.ts";
 
 const response = await Fetch.post("http://example.com")
   .set("Content-Type", "application/json")
