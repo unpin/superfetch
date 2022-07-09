@@ -1,5 +1,7 @@
 # Superfetch
 
+> ⚠️ Not yet ready for production. Many things are subject to change.
+
 ## About
 
 Superfetch is a high-level abstraction for testing APIs.
