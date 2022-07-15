@@ -68,7 +68,7 @@ Checks if header is equal to given value.
 
 Checks if header matches regular expression.
 
-### .send(body: any): Fetch
+### .send(body: any): FetchResponse
 
 Sends request with body and returns FetchResponse object.
 
