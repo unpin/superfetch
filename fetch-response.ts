@@ -37,7 +37,7 @@ export class FetchResponse {
     try {
       const { status, headers } = this.#response;
       if (typeof k === "number") {
-        assertEquals(status, k);
+        assertEquals(status, k, "Status code does not match");
       } else if (typeof k === "string") {
         const value = headers.get(k);
         if (!value) throw new AssertionError(`"${k}" header is not provided`);
