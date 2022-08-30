@@ -1,12 +1,6 @@
 import { FetchResponse } from "./fetch-response.ts";
 
-enum METHOD {
-  GET = "GET",
-  POST = "POST",
-  PUT = "PUT",
-  PATCH = "PATCH",
-  DELETE = "DELETE",
-}
+type METHOD = "GET" | "POST" | "PUT" | "PATCH" | "DELETE";
 
 enum CONTENT_TYPE {
   TEXT = "text/plain",
@@ -25,23 +19,23 @@ export class Fetch {
   }
 
   static post(url: string) {
-    return new Fetch(url, METHOD.POST);
+    return new Fetch(url, "POST");
   }
 
   static patch(url: string) {
-    return new Fetch(url, METHOD.PATCH);
+    return new Fetch(url, "PATCH");
   }
 
   static put(url: string) {
-    return new Fetch(url, METHOD.PUT);
+    return new Fetch(url, "PUT");
   }
 
   static get(url: string) {
-    return new Fetch(url, METHOD.GET);
+    return new Fetch(url, "GET");
   }
 
   static delete(url: string) {
-    return new Fetch(url, METHOD.DELETE);
+    return new Fetch(url, "DELETE");
   }
 
   set(key: string, value: string) {
