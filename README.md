@@ -1,5 +1,7 @@
 # Superfetch
 
+> ⚠️ Not yet ready for production. Many things are subject to change.
+
 ## About
 
 Superfetch is a high-level abstraction for testing APIs.
@@ -66,7 +68,7 @@ Checks if header is equal to given value.
 
 Checks if header matches regular expression.
 
-### .send(body: any): Fetch
+### .send(body: any): FetchResponse
 
 Sends request with body and returns FetchResponse object.
 
